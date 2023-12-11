@@ -1,0 +1,65 @@
+
+.card {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    max-width: 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.share-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%; 
+    max-height: 300px;
+    border-radius: 8px;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.card-price {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.price,
+.compare-price,
+.discount {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.compare-price {
+    text-decoration: line-through;
+    color: #555;
+}
+
+.discount {
+    color: #e44d26;
+    font-weight: bold;
+}

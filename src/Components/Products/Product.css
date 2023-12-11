@@ -1,0 +1,40 @@
+.nav-button {
+    border: none;
+    border-radius: 15px;
+    margin: 0 5px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #8080e3;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .round-rectangular-button:hover {
+    background-color: #0056b3;
+  }
+
+  .total-count {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 90%;
+  }
+
+  .button-container{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    display:flex
+  }
+
+  .image{
+    background-size: "cover";
+    background-position: "center";
+    width:100%;
+    height:20rem
+  }
+
+  .image-display{
+    display: "flex";
+    flex-wrap: "wrap" 
+  }
+  

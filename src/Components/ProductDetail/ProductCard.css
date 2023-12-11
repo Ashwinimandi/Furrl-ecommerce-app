@@ -1,0 +1,49 @@
+/* ProductCard.css */
+
+.product-detail {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .product-detail img {
+    width: 26%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .product-detail h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+  }
+  
+  .product-detail div {
+    margin: 5px 0;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: black;
+  }
+  
+.discount {
+    color:  #8080e3;;
+  }
+  
+  .vendor {
+    color: #8080e3;
+    font-size:12px /* Correct color code for light blue */
+}
+
+  .compare-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 1rem;
+  }
+  
+  .product-detail h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: grey; /* Set the title color to grey */
+}

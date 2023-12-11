@@ -1,0 +1,24 @@
+.fixed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    color: #8080e3; 
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    margin-right: 40rem;
+  }
+  
+  .header-content h1 {
+    margin: 0; 
+  }
+  
+  .header-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
