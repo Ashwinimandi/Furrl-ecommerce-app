@@ -1,17 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Card.css";
-import Share from "../Share";
 import { Link } from "react-router-dom";
 
 export const Card = ({ e }) => {
-  const [isShareOpen, setShareOpen] = useState(false);
-
   const handleShareClick = () => {
-    setShareOpen(true);
-  };
-
-  const handleShareClose = () => {
-    setShareOpen(false);
+    let origin = `${window.location.origin}/${e.id}`;
+    navigator
+      .share({
+        title: "Share your Product",
+        url: origin,
+      })
+      .then(() => {
+        console.log("Successfully shared");
+      })
+      .catch((error) => {
+        console.error("Error sharing:", error);
+      });
   };
 
   return (
@@ -37,7 +41,6 @@ export const Card = ({ e }) => {
           <div className="discount"> {e.furrlDiscountPercent}% off</div>
         </div>
       </div>
-      {isShareOpen && <Share link={e.id} onClose={handleShareClose} />}
     </div>
   );
 };
